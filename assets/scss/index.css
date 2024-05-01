@@ -711,16 +711,22 @@
 }
 
 @media screen and (max-width: 1366px) {
+  .countdown {
+    font-size: 26px !important;
+  }
   .wrapper {
     position: relative;
     transition: all 0.5s;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     overflow: hidden;
   }
+  .wrapper .vector-2 {
+    bottom: -100px;
+  }
   .wrapper .vector-5 {
-    bottom: -10px;
+    bottom: -100px;
   }
   .wrapper .name-head {
     font-size: 72px;
@@ -764,7 +770,7 @@
     transform: translateY(50%);
   }
   .wrapper-3 .name-head {
-    font-size: 80px;
+    font-size: 76px;
   }
   .wrapper-4 .name-head {
     position: relative;
