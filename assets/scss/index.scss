@@ -924,6 +924,9 @@ $main-font-color: #565e2e;
 }
 
 @media screen and (max-width: 600px) {
+  .countdown{
+    font-size: 26px !important;
+  }
   .logo {
     border: 1px solid $main-font-color;
     padding: 10px;

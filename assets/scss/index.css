@@ -972,6 +972,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .countdown {
+    font-size: 26px !important;
+  }
   .logo {
     border: 1px solid #565e2e;
     padding: 10px;
