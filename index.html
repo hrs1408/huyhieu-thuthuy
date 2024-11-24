@@ -113,7 +113,7 @@
           <div class="pl-[60px] text-mobile">
             <p class="invite">
               thư mời tham dự <br />
-              lễ đính hôn
+              lễ thành hôn
             </p>
             <p class="address">
               <span class="font-bold"
@@ -129,10 +129,8 @@
               >
             </p>
             <p class="date">
-              <span class="font-bold"
-                ><i class="fa-solid fa-calendar-days"></i> Chủ nhật <br
-              /></span>
-              <span>11:00 AM - 26 Tháng 5, 2024 </span>
+              <span class="font-bold"><i class="fa-solid fa-calendar-days"></i> Thứ sáu <br/></span>
+              <span>11:00 AM - 6 Tháng 12, 2024 </span>
             </p>
           </div>
         </div>
@@ -250,10 +248,10 @@
       <section class="text-center head-content" data-aos="fade-down-left">
         <p class="main-text">
           Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như lễ
-          đính của chúng tôi. Chúng tôi muốn gửi đến bạn những lời cảm ơn sâu
+          thành hôn của chúng tôi. Chúng tôi muốn gửi đến bạn những lời cảm ơn sâu
           sắc nhất và để bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó. Cảm
           ơn các bạn rất nhiều vì sự hiện diện cùng những lời chúc tốt đẹp mà
-          bạn đã dành cho chúng tôi! <b>Save the date: May 26, 2024 </b>
+          bạn đã dành cho chúng tôi! <b>Save the date: Friday, December 6, 2024 </b>
         </p>
       </section>
       <section class="p-20">
@@ -262,7 +260,7 @@
           <p class="save-date">
             <span>Save the date</span>
             <br />
-            <span>May 26, 2024</span>
+            <span>Friday, December 6, 2024</span>
           </p>
         </div>
       </section>
@@ -275,42 +273,98 @@
       audioElement.play();
     </script>
     <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("May 26, 2024 10:00:00").getTime();
+      // Hàm để lấy tham số từ URL
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
 
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML =
-          days +
-          " Ngày, " +
-          hours +
-          " Giờ " +
-          minutes +
-          " Phút " +
-          seconds +
-          " Giây ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+      // Lấy giá trị tham số 'nha'
+      var nhaParam = getUrlParameter('nha');
+      
+      // Cập nhật text dựa vào tham số
+      window.onload = function() {
+        var inviteText = document.querySelector('.invite');
+        var mainText = document.querySelector('.main-text');
+        var addressText = document.querySelector('.address span:nth-child(2)');
+        var addressLink = document.querySelector('.address .btn');
+        var dateText = document.querySelector('.date span:nth-child(2)');
+        var countDownDate = new Date(nhaParam === 'gai' ? "Dec 05, 2024 11:00:00" : "Dec 06, 2024 11:00:00").getTime();
+        
+        var ceremonyType = nhaParam === 'gai' ? 'lễ vu quy' : 'lễ thành hôn';
+        var address = nhaParam === 'gai' 
+          ? 'Nhà hàng Hương Toàn - Thuỷ Phương, Hương Thuỷ, Huế'
+          : 'Nhà hàng Rose Place - 268 Điện Biên Phủ, Thành Phố Huế, Thừa Thiên Huế';
+        var mapUrl = nhaParam === 'gai'
+          ? 'https://www.google.com/maps/place/FJ8V%2B8CG,+Th%E1%BB%A7y+Ph%C6%B0%C6%A1ng,+H%C6%B0%C6%A1ng+Th%E1%BB%A7y,+Th%E1%BB%ABa+Thi%C3%AAn+Hu%E1%BA%BF,+Vi%E1%BB%87t+Nam/@16.4633056,107.6428866,1053m/data=!3m1!1e3!4m9!1m2!2m1!1zSMawxqFuZyB0b8OgbiByZXN0YXVyYW50!3m5!1s0x3141a1b78b62d7dd:0xd378f3efd412b7aa!8m2!3d16.4658736!4d107.6436246!16s%2Fg%2F11mvq2vpkr?entry=ttu'
+          : 'https://www.google.com/maps/place/268+%C4%90i%E1%BB%87n+Bi%C3%AAn+Ph%E1%BB%A7,+Tr%C6%B0%E1%BB%9Dng+An,+Hu%E1%BA%BF,+Th%E1%BB%ABa+Thi%C3%AAn+Hu%E1%BA%BF,+Vi%E1%BB%87t+Nam/@16.4438663,107.5768111,1053m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3141a15112da7509:0xa5838c7317f3c764!8m2!3d16.4438664!4d107.581682!16s%2Fg%2F11fy96rtxm?entry=ttu';
+        var date = nhaParam === 'gai' 
+          ? '11:00 AM - 5 Tháng 12, 2024'
+          : '11:00 AM - 6 Tháng 12, 2024';
+        var saveDate = nhaParam === 'gai'
+          ? 'Thursday, December 5, 2024'
+          : 'Friday, December 6, 2024';
+        
+        // Cập nhật text trong phần invite
+        if(inviteText) {
+          inviteText.innerHTML = `
+            thư mời tham dự <br />
+            ${ceremonyType}
+          `;
         }
-      }, 1000);
+        
+        // Cập nhật text trong phần main text
+        if(mainText) {
+          mainText.innerHTML = `Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như ${ceremonyType} của chúng tôi. Chúng tôi muốn gửi đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó. Cảm ơn các bạn rất nhiều vì sự hiện diện cùng những lời chúc tốt đẹp mà bạn đã dành cho chúng tôi! <b>Save the date: ${saveDate}</b>`;
+        }
+
+        // Cập nhật địa chỉ
+        if(addressText) {
+          addressText.textContent = address;
+        }
+
+        // Cập nhật link địa chỉ
+        if(addressLink) {
+          addressLink.href = mapUrl;
+        }
+
+        // Cập nhật ngày
+        if(dateText) {
+          dateText.textContent = date;
+        }
+
+        // Cập nhật countdown
+        var x = setInterval(function () {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("demo").innerHTML =
+            days + " Ngày,   " +
+            hours + " Giờ   " +
+            minutes + " Phút   " +
+            seconds + " Giây   ";
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+
+        var dayOfWeek = nhaParam === 'gai' ? 'Thứ năm' : 'Thứ sáu';
+        
+        // Cập nhật ngày trong phần date
+        var daySpan = document.querySelector('.date span.font-bold');
+        if(daySpan) {
+          daySpan.innerHTML = `<i class="fa-solid fa-calendar-days"></i> ${dayOfWeek} <br/>`;
+        }
+      };
     </script>
   </body>
 </html>

@@ -24,7 +24,6 @@
   font-style: normal;
   color: #565e2e;
 }
-
 .logo .T {
   position: relative;
   bottom: 40px;
@@ -39,7 +38,6 @@
   height: 100vh;
   overflow: hidden;
 }
-
 .wrapper .vector-1 {
   position: absolute;
   top: 0;
@@ -48,7 +46,6 @@
   height: 100%;
   z-index: -1;
 }
-
 .wrapper .vector-2 {
   position: absolute;
   bottom: 0;
@@ -57,7 +54,6 @@
   height: 100%;
   z-index: -1;
 }
-
 .wrapper .vector-3 {
   position: absolute;
   top: 0;
@@ -67,7 +63,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -79,7 +74,6 @@
     transform: rotate(0deg);
   }
 }
-
 .wrapper .vector-4 {
   position: absolute;
   top: 0;
@@ -89,7 +83,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper .vector-5 {
   position: absolute;
   bottom: 100px;
@@ -99,7 +92,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper .audio {
   visibility: hidden;
   position: absolute;
@@ -109,32 +101,26 @@
   height: 100%;
   z-index: 2;
 }
-
 .wrapper header {
   position: relative;
   z-index: 100;
   padding: 50px 60px;
 }
-
 .wrapper header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .wrapper header nav ul {
   display: flex;
   border-radius: 8px;
 }
-
 .wrapper header nav ul .active {
   background: #565e2e;
 }
-
 .wrapper header nav ul .active a {
   color: #f6eee1;
 }
-
 .wrapper header nav ul li {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   width: 120px;
@@ -146,36 +132,30 @@
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
 }
-
 .wrapper header nav ul li:hover {
   background: #565e2e;
 }
-
 .wrapper header nav ul li:hover a {
   color: #f6eee1;
 }
-
 .wrapper header nav ul li:first-child {
   border-radius: 8px 0 0 8px;
 }
-
 .wrapper header nav ul li:last-child {
   border-radius: 0 8px 8px 0;
   border-right: 1px solid #565e2e;
 }
-
 .wrapper header nav ul li a {
   text-decoration: none;
   color: #565e2e;
   font-size: 18px;
   font-weight: 500;
 }
-
 .wrapper .name-head {
   margin-top: 20px;
   margin-left: 60px;
   word-spacing: 10px;
-  font-size: 100px;
+  font-size: 80px;
   font-family: "Great Vibes", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -183,15 +163,12 @@
   color: #565e2e;
   line-height: 1.2;
 }
-
 .wrapper .name-head .and-name {
   margin-left: 300px;
 }
-
 .wrapper .name-head .wom-name {
   margin-left: 130px;
 }
-
 .wrapper .invite {
   line-height: 1.2;
   padding-top: 20px;
@@ -200,21 +177,18 @@
   font-weight: bold;
   font-size: 42px;
 }
-
 .wrapper .address {
   padding-top: 20px;
   color: #565e2e;
   text-transform: uppercase;
   font-size: 22px;
 }
-
 .wrapper .date {
   padding-top: 20px;
   color: #565e2e;
   text-transform: uppercase;
   font-size: 22px;
 }
-
 .wrapper .brush-image {
   position: relative;
   z-index: 100;
@@ -233,7 +207,6 @@
   overflow: hidden;
   background-image: url("../img/bg1.png");
 }
-
 .wrapper-3 .vector-1 {
   position: absolute;
   top: -800px;
@@ -242,11 +215,10 @@
   height: 100%;
   z-index: 1;
 }
-
 .wrapper-3 .vector-1 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .wrapper-3 .vector-2 {
   position: absolute;
   bottom: 0;
@@ -255,7 +227,6 @@
   height: 100%;
   z-index: 1;
 }
-
 .wrapper-3 .vector-3 {
   position: absolute;
   top: 0;
@@ -265,7 +236,6 @@
   z-index: 1;
   animation: animate 10s linear infinite;
 }
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -277,7 +247,6 @@
     transform: rotate(0deg);
   }
 }
-
 .wrapper-3 .vector-4 {
   position: absolute;
   top: 0;
@@ -287,7 +256,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-3 .vector-5 {
   position: absolute;
   bottom: 100px;
@@ -297,7 +265,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-3 .name {
   width: 50%;
   position: absolute;
@@ -306,7 +273,6 @@
   transform: translateY(-50%);
   z-index: 999;
 }
-
 .wrapper-3 .name-head {
   word-spacing: 10px;
   font-size: 100px;
@@ -318,7 +284,6 @@
   position: relative;
   z-index: 100;
 }
-
 .wrapper-3 .brush-image {
   position: relative;
   z-index: 100;
@@ -336,7 +301,6 @@
   height: 100vh;
   overflow: hidden;
 }
-
 .wrapper-4 .vector-1 {
   position: absolute;
   top: 0;
@@ -345,11 +309,9 @@
   height: 100%;
   z-index: -1;
 }
-
 .wrapper-4 .vector-1 img {
   transform: scaleX(-1);
 }
-
 .wrapper-4 .vector-2 {
   position: absolute;
   top: 0;
@@ -358,7 +320,6 @@
   height: 100%;
   z-index: 1;
 }
-
 .wrapper-4 .vector-3 {
   position: absolute;
   top: 250px;
@@ -368,7 +329,6 @@
   z-index: 1;
   animation: animate 10s linear infinite;
 }
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -380,7 +340,6 @@
     transform: rotate(0deg);
   }
 }
-
 .wrapper-4 .vector-4 {
   position: absolute;
   top: 0;
@@ -390,7 +349,6 @@
   z-index: 1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-4 .vector-5 {
   position: absolute;
   bottom: 100px;
@@ -400,7 +358,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-4 .name {
   position: absolute;
   right: 40px;
@@ -410,13 +367,11 @@
   width: 60%;
   text-align: right;
 }
-
 .wrapper-4 .content {
   right: 0;
   position: absolute;
   width: 80%;
 }
-
 .wrapper-4 .name-head {
   position: relative;
   word-spacing: 10px;
@@ -429,7 +384,6 @@
   line-height: 1;
   width: 100%;
 }
-
 .wrapper-4 .brush-image {
   position: relative;
   bottom: 700px;
@@ -449,7 +403,6 @@
   overflow: hidden;
   background-image: url("../img/bg1.png");
 }
-
 .wrapper-2 .vector-1 {
   position: absolute;
   top: 0;
@@ -458,7 +411,6 @@
   height: 100%;
   z-index: 1;
 }
-
 .wrapper-2 .vector-2 {
   position: absolute;
   bottom: 0;
@@ -467,7 +419,6 @@
   height: 100%;
   z-index: 1;
 }
-
 .wrapper-2 .vector-3 {
   position: absolute;
   top: 0;
@@ -477,7 +428,6 @@
   z-index: 1;
   animation: animate 10s linear infinite;
 }
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -489,7 +439,6 @@
     transform: rotate(0deg);
   }
 }
-
 .wrapper-2 .vector-4 {
   position: absolute;
   top: 0;
@@ -499,7 +448,6 @@
   z-index: 1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-2 .vector-5 {
   position: absolute;
   bottom: 100px;
@@ -509,7 +457,6 @@
   z-index: 1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-2 .name-head {
   position: absolute;
   left: 27%;
@@ -523,16 +470,13 @@
   line-height: 0.5;
   width: 100%;
 }
-
 .wrapper-2 .name-head .and-name {
   margin-left: 450px;
   opacity: 0.5;
 }
-
 .wrapper-2 .name-head .wom-name {
   margin-left: 470px;
 }
-
 .wrapper-2 .brush-image {
   position: relative;
   z-index: 100;
@@ -540,7 +484,6 @@
   margin-right: -20px;
   margin-top: -60px;
 }
-
 .wrapper-2 .content-left {
   position: absolute;
   left: 0;
@@ -556,11 +499,9 @@
   color: #565e2e;
   font-size: 26px;
 }
-
 .wrapper-2 .content-left .content {
   width: 100%;
 }
-
 .wrapper-2 .content-right {
   position: absolute;
   right: 0;
@@ -570,7 +511,6 @@
   padding-right: 60px;
   z-index: 999;
 }
-
 .wrapper-2 .content-right .content {
   width: 100%;
 }
@@ -584,7 +524,6 @@
   height: 120vh;
   overflow: hidden;
 }
-
 .wrapper-5 .head-content {
   padding-top: 50px;
   display: flex;
@@ -592,11 +531,9 @@
   font-size: 26px;
   color: #565e2e;
 }
-
 .wrapper-5 .head-content p {
   width: 60%;
 }
-
 .wrapper-5 .vector-1 {
   position: absolute;
   top: 0;
@@ -605,7 +542,6 @@
   height: 100%;
   z-index: 9999;
 }
-
 .wrapper-5 .vector-2 {
   position: absolute;
   bottom: 0;
@@ -614,7 +550,6 @@
   height: 100%;
   z-index: -1;
 }
-
 .wrapper-5 .vector-3 {
   position: absolute;
   top: 0;
@@ -624,7 +559,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -636,7 +570,6 @@
     transform: rotate(0deg);
   }
 }
-
 .wrapper-5 .vector-4 {
   position: absolute;
   top: 0;
@@ -646,7 +579,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-5 .vector-5 {
   position: absolute;
   bottom: 100px;
@@ -656,7 +588,6 @@
   z-index: -1;
   animation: animate 10s linear infinite;
 }
-
 .wrapper-5 .name-head {
   position: absolute;
   left: 27%;
@@ -670,16 +601,13 @@
   line-height: 0.5;
   width: 100%;
 }
-
 .wrapper-5 .name-head .and-name {
   margin-left: 450px;
   opacity: 0.5;
 }
-
 .wrapper-5 .name-head .wom-name {
   margin-left: 470px;
 }
-
 .wrapper-5 .brush-image {
   position: absolute;
   right: 0;
@@ -688,7 +616,6 @@
   width: 100%;
   height: 100%;
 }
-
 .wrapper-5 .brush-image .save-date {
   padding: 20px;
   border-radius: 8px;
@@ -755,7 +682,8 @@
     z-index: 1;
   }
   .wrapper-3 .vector-1 img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .wrapper-3 .vector-2 {
     bottom: 200px;
@@ -844,7 +772,6 @@
     visibility: hidden;
   }
 }
-
 @media screen and (max-width: 800px) {
   .wrapper .head-container {
     display: block !important;
@@ -976,7 +903,6 @@
     visibility: hidden;
   }
 }
-
 @media screen and (max-width: 600px) {
   .countdown {
     font-size: 26px !important;
@@ -1175,7 +1101,6 @@
     visibility: hidden;
   }
 }
-
 @media screen and (max-width: 375px) {
   .logo {
     border: 1px solid #565e2e;
@@ -1234,10 +1159,10 @@
     font-size: 22px;
   }
   .wrapper .address {
-    font-size: 18px;
+    font-size: 14px;
   }
   .wrapper .date {
-    font-size: 18px;
+    font-size: 16px;
   }
   .wrapper .brush-image {
     width: 100%;
@@ -1247,7 +1172,7 @@
   }
   .wrapper-3 .name-head {
     padding-top: 60px;
-    font-size: 36px;
+    font-size: 32px;
   }
   .wrapper-3 .brush-image {
     position: relative;
@@ -1271,7 +1196,6 @@
     bottom: -230px;
   }
 }
-
 .btn {
   background-color: #565e2e;
   color: #f6eee1;
@@ -1286,7 +1210,6 @@
   transition: all 0.5s;
   border: 1px solid transparent;
 }
-
 .btn:hover {
   border: 1px solid #565e2e;
   background-color: #f6eee1;
@@ -1308,7 +1231,6 @@
   white-space: nowrap;
   font-family: "Great Vibes", cursive;
 }
-
 .countdown .time {
   padding: 0 10px;
 }
@@ -1330,4 +1252,4 @@
   font-size: 26px;
   line-height: 1.5;
   margin-top: 20px;
-}
+}/*# sourceMappingURL=index.css.map */
