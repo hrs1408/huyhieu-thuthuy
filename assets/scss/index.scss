@@ -181,7 +181,10 @@ $main-font-color: #565e2e;
     padding-top: 20px;
     color: $main-font-color;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 22px; 
+    .btn {
+      margin-top: 20px;
+    }
   }
   .date {
     padding-top: 20px;
@@ -1242,22 +1245,15 @@ $main-font-color: #565e2e;
 
 
 .btn {
-  background-color: $main-font-color;
-  color: $main-bg-color;
+  background: #B47B31;
+  color: #fff;
   padding: 8px 16px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-  transition: all 0.5s;
-  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  
   &:hover {
-    border: 1px solid $main-font-color;
-    background-color: $main-bg-color;
-    color: $main-font-color;
+    background: #9E6F21;
+    transform: translateY(-2px);
   }
 }
 
@@ -1285,7 +1281,7 @@ $main-font-color: #565e2e;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  color: $main-font-color;
+  color: #6B4423;
 }
 
 
@@ -1294,7 +1290,7 @@ $main-font-color: #565e2e;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  color: $main-font-color;
+  color: #6B4423;
   font-size: 26px;
   line-height: 1.5;
   margin-top: 20px;
